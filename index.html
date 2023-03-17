@@ -16,29 +16,45 @@
           one of our fine UFOs.
         </p>
         <h2>Your contact information</h2>
-        <p>Your name</p>
-        <p>Phone number</p>
-        <p>Email</p>
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="ex: John Doe"><br>
+        <label for="phone">Your phone number:</label><br>
+        <input type="tel" id="phone" name="phone" pattern="+[0-9]{3}-[0-9]{9}" placeholder="ex: +351-912345678"><br>
+        <label for="mail">Your E-mail:</label><br>
+        <input type="email" id="mail" name="mail" placeholder="ex: abc123@domain.com"><br>
 
         <h2>About your abduction</h2>
-        <p>Requested date</p>
-        <p>How many people would you like abducted?</p>
+        <label for="date">Requested date</label><br>
+        <input type="date" id="date" name="date"><br>
+        <label for="peopleabducted">How many people would you like abducted?</label><br>
+        <input type="number" id="peopleabducted" name="peopleabducted" min="0" max="9999999"  placeholder="0-infinite"><br>
         <p>What type of UFO do you prefer?</p>
-        <ul>
-          <li>Classic oval UFO</li>
-          <li>Star Wars-style Imperial cruiser</li>
-          <li>Battlestar Galactica-style Viper</li>
-          <li>Borg-style cube</li>
-        </ul>
+        <form>
+        <input type="radio" id="Abyssin" name="fav_alien">
+        <label for="Abyssin">Abyssin</label><br>
+        <input type="radio" id="Anzati" name="fav_alien" value="HTML">
+        <label for="Anzati">Anzati</label><br>
+        <input type="radio" id="Besalisk" name="fav_alien" value="HTML">
+        <label for="Besalisk">Besalisk</label>
+        </form>
+        
         <p>What type of abduction experience do you want?</p>
-        <ul>
-          <li>Tour of the solar system</li>
-          <li>Alien dinner and discussion</li>
-          <li>Alien dance lessons</li>
-          <li>Whale watching</li>
-        </ul>
-        <p>Special requests:</p>
-        <p>Add me to your email list</p>
+
+        <form>
+            <input type="checkbox" id="solarsystem" name="solarsystem">
+            <label for="solarsystem">Tour of the solar system</label><br>
+            <input type="checkbox" id="dinandDisc" name="dinandDisc">
+            <label for="dance">Alien dinner and discussion</label><br>
+            <input type="checkbox" id="dance" name="dance" >
+            <label for="">Alien dance lessons</label><br>
+            <input type="checkbox" id="whaledance" name="whaledance">
+            <label for="whaledance">Whale dancing</label><br>
+            </form>
+
+        <label>Special requests:</label>
+        <br>
+        <textarea rows="2" cols="30" name="specialrequest" placeholder="Add me to your e-mail list"></textarea>
+
       </section>
       <aside>
         <h3>Our Location</h3>
