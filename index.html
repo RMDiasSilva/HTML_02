@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="CSS\styles.css" rel="stylesheet" />
     <title>Alien Abduction Order Form</title>
   </head>
   <body>
@@ -15,13 +15,17 @@
           Fill out the form below to place an order for an alien abduction by
           one of our fine UFOs.
         </p>
-        <h2>Your contact information</h2>
-        <label for="name">Your Name:</label><br>
-        <input type="text" id="name" name="name" placeholder="ex: John Doe"><br>
-        <label for="phone">Your phone number:</label><br>
-        <input type="tel" id="phone" name="phone" pattern="+[0-9]{3}-[0-9]{9}" placeholder="ex: +351-912345678"><br>
-        <label for="mail">Your E-mail:</label><br>
-        <input type="email" id="mail" name="mail" placeholder="ex: abc123@domain.com"><br>
+        <br>
+        <form>
+            <fieldset>
+                <legend>Your contact information</legend>
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="ex: John Doe"><br><br>
+            <label for="phone">Your phone number:</label><br>
+            <input type="tel" id="phone" name="phone" pattern="+[0-9]{3}-[0-9]{9}" placeholder="ex: +351-912345678"><br><br>
+            <label for="mail">Your E-mail:</label><br>
+            <input type="email" id="mail" name="mail" placeholder="ex: abc123@domain.com"><br>
+            </fieldset>
 
         <h2>About your abduction</h2>
         <label for="date">Requested date</label><br>
@@ -32,9 +36,9 @@
         <form>
         <input type="radio" id="Abyssin" name="fav_alien">
         <label for="Abyssin">Abyssin</label><br>
-        <input type="radio" id="Anzati" name="fav_alien" value="HTML">
+        <input type="radio" id="Anzati" name="fav_alien">
         <label for="Anzati">Anzati</label><br>
-        <input type="radio" id="Besalisk" name="fav_alien" value="HTML">
+        <input type="radio" id="Besalisk" name="fav_alien">
         <label for="Besalisk">Besalisk</label>
         </form>
         
@@ -50,11 +54,12 @@
             <input type="checkbox" id="whaledance" name="whaledance">
             <label for="whaledance">Whale dancing</label><br>
             </form>
-
+<br>
         <label>Special requests:</label>
         <br>
-        <textarea rows="2" cols="30" name="specialrequest" placeholder="Add me to your e-mail list"></textarea>
+        <textarea rows="2" cols="30" name="specialrequest" placeholder="Add me to your e-mail list"></textarea><br><br>
 
+       <input type="submit" value="Submit" target="_blank">
       </section>
       <aside>
         <h3>Our Location</h3>
